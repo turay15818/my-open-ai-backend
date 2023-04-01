@@ -4,9 +4,9 @@ import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
 
 dotenv.config()
-
+OPENAI_API_KEY="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"
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey:OPENAI_API_KEY,
 });
 
 const openai = new OpenAIApi(configuration);
